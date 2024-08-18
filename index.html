@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenden</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.9/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="product.html">
+  </head>
+  <body>
+    <!--Responsive navbar-->
+    <nav
+      class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10"
+    >
+      <h1 class="text-2xl">Greenden</h1>
+      <div class="w-10 h-10 md:hidden">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6"
+          id="menuicon"
+        > 
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          /> 
+        </svg>
+      </div>
+
+      <ul class="flex gap-3 text-gray-600 hidden md:flex">
+        <li class="hover:underline hover:text-black"><a href="@"> Home </a></li>
+        <li class="hover:underline hover:text-black">
+          <a href="product.html">Products</a>
+        </li>
+        <li class="hover:underline hover:text-black">
+          <a href="contact.html"> Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="sidenav" class="bg-green-100 top-0 right-0 z-20 fixed transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+      <div class="text-right p-5">
+        <p class="inline cursor-pointer" id="closenav">X</p>
+      </div>
+        <ul class="flex flex-col items-center gap-10 text-gray-600  md:flex">
+          <li class="hover:underline hover:text-black">
+            <a href="index.html"> Home </a>
+          </li>
+          <li class="hover:underline hover:text-black">
+            <a href="product.html">Products</a>
+          </li>
+          <li class="hover:underline hover:text-black">
+            <a href="contact.html"> Contact</a>
+          </li>
+        </ul>
+     
+      
+    </section>
+
+    <!--header-->
+    <div class="bg-green-100 p-20 flex justify-center">
+      <div>
+        <p>We offer you a wide range or Natural and Artificial Flowers</p>
+        <h2 class="text-3xl font-bold">Plant for your Interior</h2>
+        <div>
+          <button class="rounded bg-black text-white p-2 mt-3">shop now</button>
+          <button class="border rounded p-2 border-black mt-3">
+            Watch Video
+          </button>
+        </div>
+        <p class="mt-5">160+ Plant Species | 100+ Clients</p>
+      </div>
+      <div class="hidden md:flex w-40 p-1 ml-10">
+        <img src="img1.jpg" alt="" />
+      </div>
+    </div>
+
+    <section>
+      <h1 class="font-bold text-3xl text-center p-3">About us</h1>
+      <p class="p-1 text-center">
+        We curate designs and grow nature for those who admire the beauty of
+        Mother Earth
+      </p>
+
+      <div class="md:flex text-center">
+        <div class="border border-black p-3 m-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 inline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
+            />
+          </svg>
+
+          <h2 class="font-medium">Large Assortment</h2>
+          <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            cupiditate laboriosam eos aliquid quam modi, incidunt molestias sint
+            aut nam, temporibus facilis id repellat corporis beatae expedita
+            deleniti consequatur amet earum adipisci nobis.
+          </p>
+        </div>
+        <div class="border border-black p-3 m-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 inline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"
+            />
+          </svg>
+
+          <h2 class="font-medium text-center">Free and Fast Shipping</h2>
+          <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            cupiditate laboriosam eos aliquid quam modi, incidunt molestias sint
+            aut nam, temporibus facilis id repellat corporis beatae expedita
+            deleniti consequatur amet earum adipisci nobis.
+          </p>
+        </div>
+
+        <div class="border border-black p-3 m-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 inline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
+            />
+          </svg>
+
+          <h2 class="font-medium text-center">24/7 Support System</h2>
+          <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            cupiditate laboriosam eos aliquid quam modi, incidunt molestias sint
+            aut nam, temporibus facilis id repellat corporis beatae expedita
+            deleniti consequatur amet earum adipisci nobis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-4 text-center m-4">
+      <h1 class="text-3xl font-bold text-center p-3">Best Sellers</h1>
+
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-2 mt-4">
+        <div>
+          <img
+            src="img01.png"
+            alt=""
+            class="inline hover:shadow-xl transform hover:-translate-y-2"
+          />
+          <h3>yellow Dahlia</h3>
+          <p>$20</p>
+        </div>
+
+        <div>
+          <img
+            src="img02.png"
+            alt=""
+            class="inline hover:shadow-xl transform hover:-translate-y-2"
+          />
+          <h3>Cone Bushes</h3>
+          <p>$25</p>
+        </div>
+
+        <div>
+          <img
+            src="img3.png"
+            alt=""
+            class="inline hover:shadow-xl transform hover:-translate-y-2"
+          />
+          <h3>White Jasmine</h3>
+          <p>$30</p>
+        </div>
+
+        <div>
+          <img
+            src="img4.png"
+            alt=""
+            class="inline hover:shadow-xl transform hover:-translate-y-2"
+          />
+          <h3>Floral Rose</h3>
+          <p>$40</p>
+        </div>
+
+        <div>
+          <img
+            src="img5.png"
+            alt=""
+            class="inline hover:shadow-xl transform hover:-translate-y-2"
+          />
+          <h3>Orange Gerbera</h3>
+          <p>$20</p>
+        </div>
+
+        <div>
+          <img
+            src="img6.png"
+            alt=""
+            class="inline hover:shadow-xl transform hover:-translate-y-2"
+          />
+          <h3>King Protea</h3>
+          <p>$35</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Customer Reviews-->
+    <section class="p-4 mt-5">
+      <h1 class="font-bold text-3xl text-center">Customer Reviews</h1>
+      <div class="flex flex-col gap-4 justify-center text-white mt-3">
+        <div class="bg-green-900 p-2">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam,
+            non, itaque quam, rerum sed delectus animi iste amet earum
+            recusandae impedit et repudiandae! Sint dicta laborum id non at
+            libero est quasi praesentium iste, mollitia illum voluptatibus
+            repellendus. Deserunt modi architecto quaerat officia enim nulla
+            itaque consectetur eos assumenda error sed tempora perferendis,
+            recusandae aut quo molestiae sint? Dolorum tempore illo consectetur
+            earum corrupti excepturi ullam cumque itaque. Iusto molestiae dolore
+            nam ex hic. Aliquam iste sit illo tempora veritatis illum ipsam a
+            fugit eaque impedit assumenda, laboriosam magnam dolores
+            reprehenderit voluptate laudantium deleniti dolorum mollitia
+            pariatur reiciendis soluta maxime?
+          </p>
+          <h2 class="text-yellow-500 font-semibold">Sandra</h2>
+        </div>
+
+        <div class="bg-green-900 p-2">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam,
+            non, itaque quam, rerum sed delectus animi iste amet earum
+            recusandae impedit et repudiandae! Sint dicta laborum id non at
+            libero est quasi praesentium iste, mollitia illum voluptatibus
+            repellendus. Deserunt modi architecto quaerat officia enim nulla
+            itaque consectetur eos assumenda error sed tempora perferendis,
+            recusandae aut quo molestiae sint? Dolorum tempore illo consectetur
+            earum corrupti excepturi ullam cumque itaque. Iusto molestiae dolore
+            nam ex hic. Aliquam iste sit illo tempora veritatis illum ipsam a
+            fugit eaque impedit assumenda, laboriosam magnam dolores
+            reprehenderit voluptate laudantium deleniti dolorum mollitia
+            pariatur reiciendis soluta maxime?
+          </p>
+          <h2 class="text-yellow-500 font-semibold">Arya stark</h2>
+        </div>
+
+        <div class="bg-green-900 p-2">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam,
+            non, itaque quam, rerum sed delectus animi iste amet earum
+            recusandae impedit et repudiandae! Sint dicta laborum id non at
+            libero est quasi praesentium iste, mollitia illum voluptatibus
+            repellendus. Deserunt modi architecto quaerat officia enim nulla
+            itaque consectetur eos assumenda error sed tempora perferendis,
+            recusandae aut quo molestiae sint? Dolorum tempore illo consectetur
+            earum corrupti excepturi ullam cumque itaque. Iusto molestiae dolore
+            nam ex hic. Aliquam iste sit illo tempora veritatis illum ipsam a
+            fugit eaque impedit assumenda, laboriosam magnam dolores
+            reprehenderit voluptate laudantium deleniti dolorum mollitia
+            pariatur reiciendis soluta maxime?
+          </p>
+          <h2 class="text-yellow-500 font-semibold">John snow</h2>
+        </div>
+      </div>
+    </section>
+
+    <!--Newsletter-->
+    <section class="text-center">
+      <h1 class="font-bold text-3xl text-center mt-4">Join our News Letter</h1>
+      <p class="text-center pt-1">Signup for our e-mail newspaper and get exclusive discouts for every product</p>
+      <input type="text" class="border border-black p-2 m-3" style="width: 80%;"> <br>
+      <button class="bg-black text-white p-3 rounded underline">Subscribe</button>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-green-100 ">
+      <div class="p-4 flex flex-col gap-5">
+        <h1 class="text-xl font-semibold">Greenden</h1>
+        <p>Get exotic plants and Artificial Decor plants at affordable rates.  Be part of our Aesthetics</p>
+        <p class="font-medium">@2021 Greenden.com</p>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

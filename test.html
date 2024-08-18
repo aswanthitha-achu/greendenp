@@ -1,0 +1,29 @@
+<input type="text" id="searchbar">
+<div class="container">
+    <p>rose</p>
+    <p>jasmine</p>
+    <p>lotus</p>
+    <p>tulip</p>
+    <p>lilly</p>
+    <p>sunflower</p>
+</div>
+
+<script>
+    var searchbar = document.getElementById("searchbar")
+    var container = document.querySelector(".container")
+    var totallist = container.querySelectorAll("p")
+
+    searchbar.addEventListener("keyup", function () {
+      var enteredvalue = event.target.value
+      
+      for (count = 1; count<totallist.length; count = count+1)
+
+      if (totallist[count].textContent.indexOf(enteredvalue)<0) {
+        totallist[count].style.display = "none"
+      }
+      else
+      {
+        totallist[count].style.display = "block"
+      }
+    })
+    </script>
